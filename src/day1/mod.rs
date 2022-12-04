@@ -15,7 +15,7 @@ impl Runnable for Day1 {
     }
 
     fn part_two(&self) {
-        let mut max = include_str!("sample.txt")
+        let mut max = include_str!("input.txt")
             .split("\n\n")
             .map(|x| x.lines().flat_map(str::parse::<usize>).sum::<usize>())
             .collect::<Vec<usize>>();
